@@ -13,17 +13,17 @@
         <button class="main-nav__button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <a href="catalog.html">Каталог товаров</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__list-item">
-              <a href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__list-item--icon">
-              <a href="#">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__list-item--icon">
-              <a href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item main-nav__item--cart">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -37,25 +37,25 @@
       </ul>
       <section class="week-product">
         <h2 class="week-product__headline">Вязаные корзинки</h2>
-        <p class="week-product__">Товар недели</p>
+        <p class="week-product__label">Товар недели</p>
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="week-product__list">
           <tr>
-            <td class="week-product__field">Цвет:</td>
-            <td class="week-product__value">«Тиффани»/серый</td>
+            <td class="week-product__label">Цвет:</td>
+            <td class="week-product__key">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="week-product__field">Диаметр:</td>
-            <td class="week-product__value">5 см</td>
+            <td class="week-product__label">Диаметр:</td>
+            <td class="week-product__key">5 см</td>
           </tr>
           <tr>
-            <td class="week-product__field">Высота:</td>
-            <td class="week-product__value">15см</td>
+            <td class="week-product__label">Высота:</td>
+            <td class="week-product__key">15см</td>
           </tr>
         </table>
         <img class="week-product__image" src="https://via.placeholder.com/150" width="260" height="315" alt="Фотография вязаной корзинки">
         <p class="week-product__price">Цена: 990 руб.</p>
-        <a href="" class="week-product__buy">Заказать</a>
+        <a href="" class="week-product__buy button">Заказать</a>
       </section>
       <section class="features">
         <h2 class="features__headline">Коротко о нас</h2>
@@ -75,7 +75,7 @@
         <p class="feedback__nickname">@misssssiskras</p>
         <button class="feedback__button feedback__button--back">Назад</button>
         <button class="feedback__button feedback__button--forward">Вперед</button>
-        <a href="#" class="feedback__write">Написать</a>
+        <a href="#" class="feedback__write button">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__headline">Контакты</h2>
@@ -92,37 +92,48 @@
         <div class="contacts__map">
           <img class="contacts__image" src="https://via.placeholder.com/300" width="320"  height="457" alt="Фотография вязаной корзинки">
         </div>
-        <a href="#" class="contacts__feedback">Напишите нам</a>
+        <a href="#" class="contacts__feedback button">Напишите нам</a>
       </section>
     </main>
     <footer class="container">
-      <ul class="links">
-        <li class="links__item">
+      <ul class="social-links">
+        <li class="social-links__item">
           <a href="#" class="visually-hiddden">Мы в Инстаграме</a>
         </li>
-        <li class="links__item">
+        <li class="social-links__item">
           <a href="#" class="visually-hiddden">Мы в Фэйсбуке</a>
         </li>
-        <li class="links__item">
+        <li class="social-links__item">
           <a href="#" class="visually-hiddden">Мы в Твиттере</a>
         </li>
       </ul>
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="contacts__image" src="https://via.placeholder.com/150" width="27"  height="34" alt="HTMLAcademy">
+          <img class="copyright__image" src="https://via.placeholder.com/150" width="27"  height="34" alt="HTMLAcademy">
         </a>
       </div>
     </footer>
     <section class="modal">
       <h2 class="modal__headline">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
-      <div class="modal__size">
-        <button class="modal__item modal__item--active">S</button>
-        <button class="modal__item">M</button>
-        <button class="modal__item">L</button>
-      </div>
-      <a href="#" class="modal__tag">Добавить</a>
+      <form class="modal__size" action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="s-size" value="s-size" checked>
+            <label class="modal__label" for="s-size">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="m-size" value="m-size">
+            <label class="modal__label" for="m-size">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="l-size" value="l-size">
+            <label class="modal__label" for="l-size">L</label>
+          </li>
+        </ul>
+        <button class="modal__submit button" type="submit">Добавить</button>
+      </form>
     </section>
   </body>
 </html>
