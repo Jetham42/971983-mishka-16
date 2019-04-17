@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header container">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="https://via.placeholder.com/150" width="86" height="35" alt="Логотип Мишки">
       </a>
       <nav class="main-nav">
@@ -30,7 +31,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="site-headline">Каталог товаров</h1>
+      <h1 class="site-headline site-headline--inner">Каталог товаров</h1>
       <ul class="catalog">
         <li class="catalog__item">
           <a class="catalog__shortcut" href="#">
@@ -73,16 +74,16 @@
         <a href="#" class="video__buy button">Сделать заказ</a>
       </section>
     </main>
-    <footer class="container">
-      <ul class="links">
-        <li class="links__item">
-          <a href="#" class="visually-hiddden">Мы в Инстаграме</a>
+    <footer class="footer container">
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a href="#" class="visually-hidden">Мы в Инстаграме</a>
         </li>
-        <li class="links__item">
-          <a href="#" class="visually-hiddden">Мы в Фэйсбуке</a>
+        <li class="social-links__item">
+          <a href="#" class="visually-hidden">Мы в Фэйсбуке</a>
         </li>
-        <li class="links__item">
-          <a href="#" class="visually-hiddden">Мы в Твиттере</a>
+        <li class="social-links__item">
+          <a href="#" class="visually-hidden">Мы в Твиттере</a>
         </li>
       </ul>
       <div class="copyright">
@@ -93,14 +94,25 @@
       </div>
     </footer>
     <section class="modal">
-        <h2 class="modal__headline">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <div class="modal__size">
-          <button class="modal__item modal__item--active">S</button>
-          <button class="modal__item">M</button>
-          <button class="modal__item">L</button>
-        </div>
-        <a href="#" class="modal__tag">Добавить</a>
-      </section>
+      <h2 class="modal__headline">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__size" action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="s-size" value="s-size" checked>
+            <label class="modal__label" for="s-size">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="m-size" value="m-size">
+            <label class="modal__label" for="m-size">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__checkbox visually-hidden" type="checkbox" name="size" id="l-size" value="l-size">
+            <label class="modal__label" for="l-size">L</label>
+          </li>
+        </ul>
+        <button class="modal__submit button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

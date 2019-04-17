@@ -1,0 +1,34 @@
+.week-product {
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.week-product__headline {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.week-product__label {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $downy;
+}
+
+.week-product__description {
+  line-height: 24px;
+}
+
+.week-product__price {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.week-product__buy {
+  font-size: 17px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}

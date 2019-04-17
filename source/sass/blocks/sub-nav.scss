@@ -1,0 +1,21 @@
+.sub-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sub-nav__item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sub-nav__item--interior {
+  background-color: $downy;
+}
+
+.sub-nav__item--toy {
+  background-color: #56c3b2;
+}
