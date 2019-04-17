@@ -1,3 +1,25 @@
 .button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 15px 20px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: $charcoal;
+
+  background-color: #ffffff;
+  border: 2px solid $charcoal;
   text-transform: uppercase;
+}
+
+.button--modal {
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: $downy;
+  border: none;
 }
