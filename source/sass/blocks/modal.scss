@@ -1,0 +1,26 @@
+.modal {
+  line-height: 30px;
+  font-weight: 700;
+  color: $charcoal-color;
+}
+
+.modal__headline {
+  font-size: 25px;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.modal__text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.modal__list {
+  margin: 0;
+  padding: 0;
+
+  line-height: 16px;
+
+  list-style: none;
+}

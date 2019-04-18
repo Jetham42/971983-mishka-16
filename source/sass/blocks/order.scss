@@ -1,0 +1,41 @@
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $charcoal-color;
+}
+
+.order__field {
+  padding: 0;
+
+  border: none;
+}
+
+.order__name {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $downy-color;
+}
+
+.order__section {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order__label {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.order__hint {
+  font-size: 14px;
+  line-height: 16px;
+  color: $charcoal-color;
+}
+
+.order__submit {
+  font-size: 17px;
+  line-height: 16px;
+}
