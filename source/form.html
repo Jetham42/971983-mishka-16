@@ -77,7 +77,7 @@
           </ul>
         </fieldset>
         <fieldset class="order__field">
-          <legend class="order__name">ФИО</legend>
+          <legend class="order__name order__name--initials">ФИО</legend>
           <p class="order__item">
             <label for="name" class="order__label">Имя:</label>
             <input class="order__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
@@ -92,15 +92,15 @@
           </p>
         </fieldset>
         <div class="order__phone">
-          <label for="phone" class="order__name">Тел</label>
+          <label for="phone" class="order__name order__name--phone-email">Тел</label>
           <input class="order__input order__input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </div>
         <div class="order__mail">
-          <label for="mail" class="order__name">E-mail</label>
+          <label for="mail" class="order__name order__name--phone-email">E-mail</label>
           <input class="order__input order__input--envelope" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
         </div>
         <div class="order__text">
-          <label for="description" class="order__name">Доп</label>
+          <label for="description" class="order__name order__name--extra">Доп</label>
           <textarea class="order__description-field" id="description" name="text-field" rows="6" placeholder="Опишите все ваши
           пожелания к заказу"></textarea>
         </div>

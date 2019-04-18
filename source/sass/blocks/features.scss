@@ -1,4 +1,10 @@
+.features {
+  margin: 0 0 60px 0;
+}
+
 .features__headline {
+  margin: 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -12,6 +18,8 @@
 }
 
 .features__item {
+  margin: 86px 0 0 0;
+
   line-height: 20px;
   font-weight: 700;
 }

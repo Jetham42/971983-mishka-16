@@ -78,8 +78,10 @@
         <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
         <p class="feedback__name">Анастасия Красильникова</p>
         <p class="feedback__nickname">@misssssiskras</p>
-        <button class="feedback__button feedback__button--back">Назад</button>
-        <button class="feedback__button feedback__button--forward">Вперед</button>
+        <div class="feedback__button-wrapper">
+          <button class="feedback__button feedback__button--back">Назад</button>
+          <button class="feedback__button feedback__button--forward">Вперед</button>
+        </div>
         <a href="#" class="feedback__write button">Написать</a>
       </section>
       <section class="contacts">
@@ -119,7 +121,7 @@
         </a>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal visually-hidden">
       <h2 class="modal__headline">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__size" action="https://echo.htmlacademy.ru" method="POST">

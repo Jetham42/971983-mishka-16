@@ -1,21 +1,37 @@
 .feedback__headline {
+  margin: 0 0 38px 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .feedback__text {
+  margin: 0 0 40px 0;
+
   font-size: 15px;
   line-height: 30px;
   color: $charcoal-color;
 }
 
 .feedback__name {
+  margin: 0;
+
   line-height: 24px;
   font-weight: 700;
 }
 
 .feedback__nickname {
+  margin: 0 0 35px 0;
+
   line-height: 30px;
   color: $charcoal-color;
+}
+
+.feedback__button-wrapper {
+  margin: 0 0 38px 0;
+}
+
+.feedback__write {
+  margin: 0 0 90px 0;
 }

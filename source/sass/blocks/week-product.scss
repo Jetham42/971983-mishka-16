@@ -5,6 +5,8 @@
 }
 
 .week-product__headline {
+  margin: 0 0 8px 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -12,20 +14,37 @@
 }
 
 .week-product__label {
+  margin: 0 0 30px 0;
+
   font-weight: 700;
   text-transform: uppercase;
   color: $downy-color;
 }
 
 .week-product__description {
+  margin: 0 0 33px 0;
+
   line-height: 24px;
+}
+
+.week-product__list {
+  margin: 0 0 40px 0;
+}
+
+.week-product__image {
+  margin: 0 0 28px 0;
 }
 
 .week-product__price {
+  margin: 0 0 28px 0;
+
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
 }
 
 .week-product__buy {
+  margin: 0 0 76px 0;
+
   font-size: 17px;
 }

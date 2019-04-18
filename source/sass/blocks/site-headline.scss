@@ -1,12 +1,18 @@
 .site-headline {
+  margin: 0;
+  padding: 76px 0 120px 0;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
 
-  background: url("../../img/hero-mobile@1x.jpg") #fafafa 0 0 no-repeat;
+  background: url("../../img/hero-mobile@1x.jpg") #fafafa 50% 0 no-repeat;
 }
 
 .site-headline--inner {
+  margin: 0 0 30px 0;
+  padding: 76px 0 74px 0;
+
   background-image: none;
 }
