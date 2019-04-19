@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150" width="86" height="35" alt="Логотип Мишки">
+        <img class="page-header__logo-image container" src="https://via.placeholder.com/150" width="86" height="35" alt="Логотип Мишки">
       </a>
       <nav class="main-nav">
         <button class="main-nav__button">Открыть меню</button>
@@ -30,9 +30,11 @@
         </div>
       </nav>
     </header>
-    <main class="container">
-      <h1 class="site-headline site-headline--inner">Каталог товаров</h1>
-      <ul class="catalog">
+    <main>
+      <div class="site-headline site-headline--inner">
+        <h1 class="site-headline__content container">Каталог товаров</h1>
+      </div>
+      <ul class="catalog container">
         <li class="catalog__item">
           <a class="catalog__shortcut" href="#">
             <img class="catalog__img" src="https://via.placeholder.com/300" width="260" height="195" alt="Зайчик попрыгайчик">
@@ -41,7 +43,7 @@
             <a href="#">Зайчик попрыгайчик</a>
           </h2>
           <p class="catalog__description">Рост 30 см, вес 200 г</p>
-          <p class="catalog_price">1 200 руб.</p>
+          <p class="catalog__price">1 200 руб.</p>
           <a href="#" class="catalog__link">
             <span class="visually-hidden">В корзину</span>
           </a>
@@ -54,7 +56,7 @@
             <a href="#">Корзинка для белья</a>
           </h2>
           <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-          <p class="catalog_price">690 руб.</p>
+          <p class="catalog__price">690 руб.</p>
           <a href="#" class="catalog__link">
             <span class="visually-hidden">В корзину</span>
           </a>
@@ -67,19 +69,21 @@
             <a href="#">Большая корзинка для игрушек</a>
           </h2>
           <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-          <p class="catalog_price">1 500 руб.</p>
+          <p class="catalog__price">1 500 руб.</p>
           <a href="#" class="catalog__link">
             <span class="visually-hidden">В корзину</span>
           </a>
         </li>
       </ul>
-      <section class="video">
-        <h2 class="video__headline">Процесс производства</h2>
-        <div class="video__image-wrapper">
-          <img class="video__image" src="https://via.placeholder.com/300" width="260" height="150" alt="Видео">
+      <section class="video container">
+        <div class="video__wrapper">
+          <h2 class="video__headline">Процесс производства</h2>
+          <div class="video__image-wrapper">
+            <img class="video__image" src="https://via.placeholder.com/300" width="260" height="150" alt="Видео">
+          </div>
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="video__buy button">Сделать заказ</a>
         </div>
-        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="video__buy button">Сделать заказ</a>
       </section>
     </main>
     <footer class="footer container">
@@ -107,7 +111,7 @@
         </a>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal visually-hidden">
       <h2 class="modal__headline">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__size" action="https://echo.htmlacademy.ru" method="POST">

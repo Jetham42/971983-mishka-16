@@ -1,20 +1,38 @@
 .order__description {
+  margin: 0 0 30px 0;
+
   font-size: 13px;
   line-height: 24px;
   color: $charcoal-color;
 }
 
 .order__field {
+  margin: 0 0 42px 0;
   padding: 0;
 
   border: none;
 }
 
 .order__name {
+  display: block;
+  margin: 0 0 36px 0;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: $downy-color;
+}
+
+.order__name--initials {
+  margin: 0 0 33px 0;
+}
+
+.order__name--phone-email {
+  margin: 0 0 9px 0;
+}
+
+.order__name--extra {
+  margin: 0 0 23px 0;
 }
 
 .order__section {
@@ -24,18 +42,43 @@
   list-style: none;
 }
 
+.order__item {
+  margin: 0 0 46px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .order__label {
   line-height: 18px;
   font-weight: 700;
 }
 
+.order__input {
+  font-family: inherit;
+}
+
+.order__input--phone,
+.order__input--envelope {
+  margin: 0 0 34px 0;
+}
+
+.order__description-field {
+  margin: 0 0 18px 0;
+}
+
 .order__hint {
+  margin: 0 0 31px 0;
+
   font-size: 14px;
   line-height: 16px;
   color: $charcoal-color;
 }
 
 .order__submit {
+  margin: 0 0 55px 0;
+
   font-size: 17px;
   line-height: 16px;
 }

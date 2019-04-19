@@ -9,7 +9,22 @@
   list-style: none;
 }
 
+.main-nav__item {
+  box-shadow: 0 1px 0 0 #ececec;
+
+  &:first-child {
+    box-shadow:
+      0 1px 0 0 #ececec,
+      0 -1px 0 0 #ececec;
+  }
+}
+
 .main-nav__link {
+  display: block;
+  width: 100%;
+  padding: 29px 0;
+
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
 }

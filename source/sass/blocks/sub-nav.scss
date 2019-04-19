@@ -1,11 +1,14 @@
 .sub-nav {
-  margin: 0;
+  margin: 0 0 34px 0;
   padding: 0;
 
   list-style: none;
 }
 
-.sub-nav__item {
+.sub-nav__link {
+  display: block;
+  padding: 30px 180px 30px 29px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;

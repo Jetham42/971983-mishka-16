@@ -1,10 +1,22 @@
 .contacts {
+  margin: 0 0 39px;
+
   font-size: 15px;
   line-height: 30px;
   color: $charcoal-color;
 }
 
 .contacts__headline {
+  margin: 0 0 40px 0;
+
   font-size: 18px;
   font-weight: 700;
+}
+
+.contacts__list {
+  margin: 0 0 40px 0;
+}
+
+.contacts__map {
+  margin: 0 0 39px 0;
 }
