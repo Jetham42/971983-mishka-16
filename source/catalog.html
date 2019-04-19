@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150" width="86" height="35" alt="Логотип Мишки">
+        <img class="page-header__logo-image container" src="https://via.placeholder.com/150" width="86" height="35" alt="Логотип Мишки">
       </a>
       <nav class="main-nav">
         <button class="main-nav__button">Открыть меню</button>
@@ -30,9 +30,11 @@
         </div>
       </nav>
     </header>
-    <main class="container">
-      <h1 class="site-headline site-headline--inner">Каталог товаров</h1>
-      <ul class="catalog">
+    <main>
+      <div class="site-headline site-headline--inner">
+        <h1 class="site-headline__content container">Каталог товаров</h1>
+      </div>
+      <ul class="catalog container">
         <li class="catalog__item">
           <a class="catalog__shortcut" href="#">
             <img class="catalog__img" src="https://via.placeholder.com/300" width="260" height="195" alt="Зайчик попрыгайчик">
@@ -73,7 +75,7 @@
           </a>
         </li>
       </ul>
-      <section class="video">
+      <section class="video container">
         <h2 class="video__headline">Процесс производства</h2>
         <div class="video__image-wrapper">
           <img class="video__image" src="https://via.placeholder.com/300" width="260" height="150" alt="Видео">
