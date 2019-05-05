@@ -50,13 +50,26 @@
   }
 }
 
+.order__item--lines {
+  display: flex;
+
+}
+
 .order__label {
   line-height: 18px;
   font-weight: 700;
 }
 
+.order__label--block {
+  display: block;
+}
+
 .order__input {
   font-family: inherit;
+}
+
+.order__input--block {
+  display: block;
 }
 
 .order__input--phone,
