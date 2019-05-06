@@ -5,23 +5,10 @@
   background-color: #ffffff;
 }
 
-.page-header__logo {
-  display: block;
-  margin: 22px 0;
-
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
-  }
 
-  .page-header__logo {
-    position: absolute;
-    top: 22px;
-    left: 0;
-    z-index: 10;
-    margin: 0;
+    background-image: linear-gradient(to bottom, #ffffff 88px, #ececec 88px, #ececec 89px, #f9f9f9 89px,);
   }
 }
