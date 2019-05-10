@@ -59,7 +59,7 @@
       </nav>
     </header>
     <main>
-      <div class="site-headline">
+      <div class="site-headline site-headline--main">
         <h1 class="site-headline__content container">Милые штуки ручной работы для дома</h1>
       </div>
       <ul class="sub-nav">
@@ -95,60 +95,77 @@
       <section class="features container">
         <h2 class="features__headline">Коротко о нас</h2>
         <ul class="features__list">
-          <li class="features__item features__item--flower">Экологически чистые материалы</li>
-          <li class="features__item features__item--greenback">Скандинавский стиль по российской цене</li>
-          <li class="features__item features__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="features__item features__item--roll">Связано вручную с любовью и умилением</li>
-          <li class="features__item features__item--rocket">Поддержка отечественного производителя</li>
-          <li class="features__item features__item--present">Поставляется в подарочной упаковке</li>
+          <div class="features__wrapper features__wrapper--left">
+            <li class="features__item features__item--flower">Экологически чистые материалы</li>
+            <li class="features__item features__item--greenback">Скандинавский стиль по российской цене</li>
+            <li class="features__item features__item--heart">Увеличивает лайки на фотографиях</li>
+          </div>
+          <div class="features__wrapper features__wrapper--right">
+            <li class="features__item features__item--roll">Связано вручную с любовью и умилением</li>
+            <li class="features__item features__item--rocket">Поддержка отечественного производителя</li>
+            <li class="features__item features__item--present">Поставляется в подарочной упаковке</li>
+          </div>
         </ul>
       </section>
       <section class="feedback container">
         <h2 class="feedback__headline">Отзывы</h2>
         <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="feedback__name">Анастасия Красильникова</p>
-        <p class="feedback__nickname">@misssssiskras</p>
+        <div class="feedback__author-wrapper">
+          <p class="feedback__name">Анастасия Красильникова</p>
+          <p class="feedback__nickname">@misssssiskras</p>
+        </div>
         <div class="feedback__button-wrapper">
           <button class="feedback__button feedback__button--back">Назад</button>
           <button class="feedback__button feedback__button--forward">Вперед</button>
         </div>
         <a href="#" class="feedback__write button">Написать</a>
       </section>
-      <section class="contacts container">
-        <h2 class="contacts__headline">Контакты</h2>
-        <table class="contacts__list">
-          <tr>
-            <td class="contacts__field">E-mail:</td>
-            <td class="contacts__value">info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td class="contacts__field">Адрес</td>
-            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+      <section class="contacts">
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__headline">Контакты</h2>
+          <table class="contacts__list">
+            <tbody class="contacts__list-body">
+              <tr class="contacts__email">
+                <td class="contacts__field">E-mail:</td>
+                <td class="contacts__value">info@mimimishkashop.ru</td>
+              </tr>
+              <tr class="contacts__addres">
+                <td class="contacts__field">Адрес</td>
+                <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="contacts__map">
           <img class="contacts__image" src="https://via.placeholder.com/300" width="320"  height="457" alt="Фотография вязаной корзинки">
         </div>
-        <a href="#" class="contacts__feedback button">Напишите нам</a>
+        <div class="container">
+          <a href="#" class="contacts__feedback button">Напишите нам</a>
+        </div>
       </section>
     </main>
-    <footer class="footer container">
-      <ul class="social-links">
-        <li class="social-links__item">
-          <a href="#" class="visually-hidden">Мы в Инстаграме</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="visually-hidden">Мы в Фэйсбуке</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="visually-hidden">Мы в Твиттере</a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="https://via.placeholder.com/150" width="27"  height="34" alt="HTMLAcademy">
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <a class="footer__logo">
+          <img src="../source/img/logo-footer.svg" width="102" height="34">
         </a>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="#" class="visually-hidden">Мы в Инстаграме</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="visually-hidden">Мы в Фэйсбуке</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="visually-hidden">Мы в Твиттере</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p class="copyright__text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="https://via.placeholder.com/150" width="27"  height="34" alt="HTMLAcademy">
+          </a>
+        </div>
       </div>
     </footer>
     <section class="modal container visually-hidden">

@@ -1,4 +1,7 @@
 .modal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   padding-top: 35px;
   padding-bottom: 46px;
 
@@ -44,4 +47,10 @@
 
 .modal__label {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    padding: 51px 108px 46px 108px;
+  }
 }

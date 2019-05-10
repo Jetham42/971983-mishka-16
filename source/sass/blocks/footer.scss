@@ -4,3 +4,18 @@
 
   background-color: $smoke-color;
 }
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}
