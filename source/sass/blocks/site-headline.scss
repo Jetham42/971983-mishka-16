@@ -1,13 +1,14 @@
 .site-headline {
   margin: 0 auto 30px auto;
   padding: 76px 0 74px 0;
+
+  background-color: #fafafa;
 }
 
 .site-headline--main {
   margin: 0;
   padding: 76px 0 120px 0;
 
-  background-color: #fafafa;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -24,26 +25,44 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-headline--main {
-    padding: 124px 0 490px 0;
+  .site-headline {
+    width: auto;
+    margin-bottom: 79px;
+    padding: 69px 0 78px 0;
   }
 
   .site-headline__content {
-    width: 500px;
+    width: auto;
 
     font-size: 43px;
     line-height: 50px;
   }
+
+  .site-headline--main {
+    padding: 124px 0 490px 0;
+  }
+
+  .site-headline__content--main {
+    width: 500px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .site-headline {
+    margin-bottom: 128px;
+    padding: 65px 0 99px 0;
+  }
+
+  .site-headline__content {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .site-headline--main {
     padding: 121px 0 456px 0;
   }
 
-  .site-headline__content {
+  .site-headline__content--main {
     width: 620px;
-    font-size: 53px;
-    line-height: 57px;
   }
 }
