@@ -114,11 +114,12 @@
 
   .order__field-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   .order__name {
+    width: 58px;
     margin: 0;
+    margin-right: 107px;
   }
 
   .order__section {
@@ -156,10 +157,6 @@
     margin-bottom: 24px;
   }
 
-  .order__name--phone {
-    margin-right: 134px;
-  }
-
   .order__input--phone {
     margin: 0;
   }
@@ -169,10 +166,6 @@
     margin-bottom: 100px;
   }
 
-  .order__name--email {
-    margin-right: 107px;
-  }
-
   .order__input--envelope {
     margin: 0;
   }
@@ -180,10 +173,6 @@
   .order__text {
     display: flex;
     margin-bottom: 53px;
-  }
-
-  .order__name--extra {
-    margin-right: 128px;
   }
 
   .order__description-field {
@@ -211,24 +200,16 @@
     width: 800px;
   }
 
+  .order__name {
+    margin-right: 55px;
+  }
+
   .order__item--color {
     width: 33%;
   }
 
   .order__name-wrapper {
     width: 800px;
-  }
-
-  .order__name--phone {
-    margin-right: 82px;
-  }
-
-  .order__name--email {
-    margin-right: 55px;
-  }
-
-  .order__name--extra {
-    margin-right: 74px;
   }
 
   .order__hint {
