@@ -10,6 +10,11 @@
   font-weight: 700;
 }
 
+.features__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 .features__list {
   margin: 0;
   padding: 0;
@@ -37,16 +42,16 @@
     line-height: 50px;
   }
 
-  .features__list {
+  .features__wrapper {
     display: flex;
   }
 
-  .features__wrapper--left {
+  .features__list--left {
     width: 235px;
-    margin-right: 99px
+    margin-right: 99px;
   }
 
-  .features__wrapper--right {
+  .features__list--right {
     width: 280px;
   }
 
@@ -64,14 +69,14 @@
 
 
 @media (min-width: $desktop-width) {
+  .features {
+    padding-left: 175px;
+  }
+
   .features__headline {
-    margin: 0 0 101px 175px;
+    margin: 0 0 101px 0;
 
     font-size: 53px;
     line-break: 57px;
-  }
-
-  .features__list {
-    margin-left: 175px;
   }
 }

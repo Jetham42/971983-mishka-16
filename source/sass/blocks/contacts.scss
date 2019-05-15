@@ -88,15 +88,16 @@
   .contacts__wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 175px;
   }
 
   .contacts__headline {
     width: 300px;
-    margin: 0 0 64px 174px;
+    margin: 0 0 64px 0;
   }
 
   .contacts__list {
-    margin: 0 0 84px 174px;
+    margin: 0 0 84px 0;
   }
 
   .contacts__list-body {

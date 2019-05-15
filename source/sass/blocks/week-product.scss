@@ -119,11 +119,12 @@
 @media (min-width: $desktop-width) {
   .week-product {
     margin-bottom: 166px;
+    padding-left: 175px;
   }
 
   .week-product__headline {
     width: 515px;
-    margin: 0 0 52px 175px;
+    margin: 0 0 52px 0;
 
     font-size: 53px;
     line-height: 57px;
@@ -135,19 +136,19 @@
   }
 
   .week-product__description {
-    margin: 0 0 66px 175px;
+    margin: 0 0 66px 0;
   }
 
   .week-product__list {
-    margin: 0 0 111px 175px;
+    margin: 0 0 111px 0;
   }
 
   .week-product__price {
-    margin: 0 0 34px 249px;
+    margin: 0 0 34px 99px;
   }
 
   .week-product__buy {
-    margin: 0 0 0 175px;
+    margin: 0;
   }
 
   .week-product__image {

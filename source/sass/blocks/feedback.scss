@@ -94,20 +94,21 @@
 @media (min-width: $desktop-width) {
   .feedback {
     margin-bottom: 242px;
+    padding-left: 174px;
   }
 
   .feedback__headline {
-    margin: 80px 0 64px 174px;
+    margin: 80px 0 64px 0;
     width: 230px;
   }
 
   .feedback__text {
     width: 740px;
-    margin: 0 0 49px 174px;
+    margin: 0 0 49px 0;
   }
 
   .feedback__author-wrapper {
-    margin: 0 0 102px 174px;
+    margin: 0 0 102px 0;
   }
 
   .feedback__name {
