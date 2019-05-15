@@ -7,7 +7,7 @@
 
 .sub-nav__link {
   display: block;
-  padding: 30px 180px 30px 29px;
+  padding: 30px 230px 30px 29px;
 
   font-size: 19px;
   line-height: 24px;
@@ -21,4 +21,34 @@
 
 .sub-nav__item--toy {
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .sub-nav {
+    display: flex;
+    width: 668px;
+    margin: -120px auto 55px auto;
+    padding: 0 52px;
+  }
+
+  .sub-nav__link {
+    box-sizing: border-box;
+    width: 334px;
+    padding: 29px 187px 31px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-nav {
+    width: 1050px;
+    margin-bottom: 134px;
+  }
+
+  .sub-nav__link {
+    width: 525px;
+    padding: 35px 377px 34px 37px;
+  }
 }

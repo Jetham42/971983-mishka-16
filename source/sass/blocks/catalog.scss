@@ -1,4 +1,7 @@
 .catalog {
+  width: 320px;
+  margin: 0 auto 30px auto;
+
   line-height: 24px;
   font-weight: 700;
 
@@ -9,17 +12,37 @@
   margin: 0 0 30px 0;
 
   border: solid 1px #ececec;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__shortcut {
+  display: block;
+  margin: 0;
 }
 
 .catalog__img {
-  margin: 0 0 30px 0;
+  display: block;
+  margin: 0;
+}
+
+.catalog__wrapper {
+  padding: 30px;
 }
 
 .catalog__headline {
+  width: 197px;
   margin: 0 0 15px 0;
 }
 
+.catalog__headline-link {
+  font-size: 17px;
+}
+
 .catalog__description {
+  width: 197px;
   margin: 0 0 50px 0;
 
   font-size: 13px;
@@ -29,7 +52,111 @@
 }
 
 .catalog__price {
+  width: 197px;
   margin: 0 0 30px 0;
 
   font-size: 15px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog {
+    width: 669px;
+    margin-bottom: 53px;
+  }
+
+  .catalog__item {
+    display: flex;
+  }
+
+  .catalog__shortcut {
+    // для сетки
+    width: 334px;
+    height: 334px;
+    //
+    margin: 0;
+  }
+
+  .catalog__img {
+    margin: 0;
+  }
+
+  .catalog__wrapper {
+    width: 277px;
+    padding: 29px 28px;
+  }
+
+  .catalog__headline {
+    width: auto;
+    margin: 0 0 15px 0;
+
+    font-size: 17px;
+  }
+
+  .catalog__headline-link {
+    font-size: 20px;
+  }
+
+  .catalog__description {
+    width: auto;
+    margin: 0 0 210px 0;
+
+    font-size: 15px;
+  }
+
+  .catalog__price {
+    width: auto;
+    margin: 0;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 57px;
+  }
+
+  .catalog__item {
+    margin: 0 48px 0 0;
+
+    &:nth-child(3n) {
+      margin: 0;
+    }
+  }
+
+  .catalog__shortcut {
+    margin: 0;
+  }
+
+  .catalog__img {
+    // для сетки
+    width: 316px;
+    height: 462px;
+    //
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 139px;
+    padding: 29px 28px;
+  }
+
+  .catalog__headline {
+    width: 190px;
+    margin: 0 0 15px 0;
+  }
+
+  .catalog__description {
+    // margin: 0 0 73px 0;
+    margin: 0;
+  }
+
+  .catalog__price {
+    justify-self: flex-end;
+    margin: 0;
+  }
 }
