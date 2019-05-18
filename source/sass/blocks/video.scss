@@ -4,7 +4,7 @@
 }
 
 .video__wrapper {
-  padding: 30px 0;
+  padding: 25px 0 32px 0;
 
   line-height: 24px;
   font-weight: 700;
@@ -14,18 +14,22 @@
 }
 
 .video__headline {
-  margin: 0 43px 26px 91px;
+  margin: 0 0 25px 91px;
 
   font-size: 17px;
   color: #000000;
 }
 
 .video__image-wrapper {
-  margin: 0 0 34px 0;
+  margin: 0 0 27px 0;
+}
+
+.video__image {
+  display: block;
 }
 
 .video__description {
-  margin: 0 34px 29px 34px;
+  margin: 0 47px 24px 34px;
 
   font-size: 13px;
   font-weight: 500;
@@ -33,6 +37,7 @@
 
 .video__buy {
   margin: 0 34px;
+  padding: 16px 12px;
 
   font-size: 17px;
   line-height: 16px;
@@ -55,21 +60,21 @@
     order: -1;
     // для сетки
     width: 668px;
-    height: 465px;
+    height: 455px;
     //
-    margin-bottom: 43px;
+    margin-bottom: 37px;
 
     background-color: bisque;
   }
 
   .video__headline {
-    margin: 0 107px 41px 107px;
+    margin: 0 107px 32px 107px;
 
     font-size: 20px;
   }
 
   .video__description {
-    margin: 0 40px 40px 40px;
+    margin: 0 40px 34px 40px;
 
     font-size: 15px;
     line-height: 30px;
@@ -88,7 +93,7 @@
 
   .video__wrapper {
     position: relative;
-    padding: 100px 57px 44px 762px;
+    padding: 94px 57px 62px 759px;
   }
 
   .video__image-wrapper {
@@ -104,11 +109,11 @@
 
   .video__headline {
     width: 150px;
-    margin: 0 0 42px 0;
+    margin: 0 0 34px 0;
   }
 
   .video__description {
-    margin: 0 0 51px 0;
+    margin: 0 0 45px 0;
   }
 
   .video__buy {

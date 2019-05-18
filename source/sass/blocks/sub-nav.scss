@@ -1,5 +1,5 @@
 .sub-nav {
-  margin: 0 0 34px 0;
+  margin: 0 0 27px 0;
   padding: 0;
 
   list-style: none;
@@ -7,7 +7,7 @@
 
 .sub-nav__link {
   display: block;
-  padding: 30px 230px 30px 29px;
+  padding: 25px 180px 30px 29px;
 
   font-size: 19px;
   line-height: 24px;
@@ -27,7 +27,7 @@
   .sub-nav {
     display: flex;
     width: 668px;
-    margin: -120px auto 55px auto;
+    margin: -120px auto 47px auto;
     padding: 0 52px;
   }
 
@@ -44,11 +44,12 @@
 @media (min-width: $desktop-width) {
   .sub-nav {
     width: 1050px;
-    margin-bottom: 134px;
+    margin-top: -151px;
+    margin-bottom: 122px;
   }
 
   .sub-nav__link {
     width: 525px;
-    padding: 35px 377px 34px 37px;
+    padding: 28px 377px 34px 37px;
   }
 }

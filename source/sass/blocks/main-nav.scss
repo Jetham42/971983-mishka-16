@@ -2,15 +2,18 @@
   position: relative;
 }
 
-
 .main-nav__logo {
   display: block;
   margin: 0 -30px;
-  padding: 22px 0;
+  padding: 20px 0;
 
   text-align: center;
 
   box-shadow: 0 1px 0 0 #ececec;
+}
+
+.main-nav__mobile-wrapper {
+  display: none;
 }
 
 .main-nav__link-list {
@@ -89,7 +92,7 @@
   .main-nav__logo {
     position: absolute;
     top: 22px;
-    left: 52px;
+    left: 0;
     z-index: 10;
     margin: 0;
     padding: 0;
@@ -97,9 +100,14 @@
     box-shadow: none;
   }
 
+  .main-nav__mobile-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .main-nav__item {
     box-shadow: none;
-    margin: 25px 37px 0 0;
+    margin: 0 37px 0 0;
     padding: 0;
 
     text-align: start;
@@ -119,7 +127,7 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    padding-left: 320px;
+    padding-left: 322px;
   }
 
   .main-nav__link {
@@ -133,12 +141,12 @@
 
   .main-nav__link--cart {
     margin: 0;
-    padding: 36px 0 28px 96px;
+    padding: 32px 0 32px 80px;
   }
 
   .main-nav__link--cart svg {
-    top: 37px;
-    left: 58px;
+    top: 34px;
+    left: 31px;
 
     transform: translateX(0);
   }
@@ -160,8 +168,8 @@
   }
 
   .main-nav__link--search svg {
-    top: 36px;
-    left: 58px;
+    top: 37px;
+    left: 60px;
   }
 
   .main-nav__hint {
@@ -171,13 +179,20 @@
   .main-nav__link-list {
     display: flex;
     width: 321px;
-    margin: 0;
-    margin-right: 93px;
+    margin: 19px 0 0 0;
+
+    font-size: 15px;
   }
 
   .main-nav__tip {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: block;
-    margin: 26px 0 0 0;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
@@ -194,8 +209,8 @@
 
   .main-nav__link-list {
     order: -1;
-    width: 354px;
-    margin-right: 346px;
+    width: 380px;
+    margin: 0 321px 0 0;
   }
 
   .main-nav__form-list {
@@ -206,28 +221,39 @@
 
   .main-nav__item {
     margin: 0;
+
+    font-size: 17px;
   }
 
   .main-nav__link--left {
-    padding: 36px 35px 30px 0;
+    padding: 32px 45px 32px 0;
 
     box-shadow: 1px 0 0 0 #ececec;
   }
 
   .main-nav__link--right {
-    padding: 36px 0 30px 35px;
+    padding: 32px 0 33px 35px;
   }
 
   .main-nav__desktop-list {
     display: flex;
     width: 618px;
-    margin: 24px 178px 0 0;
+    margin: 18px 201px 0 0;
     padding: 0;
 
     list-style: none;
   }
 
   .main-nav__desktop-item {
-    margin-right: 41px;
+    margin-right: 68px;
+  }
+
+  .main-nav__desktop-link {
+    font-size: 15px;
+  }
+
+  .main-nav__tip {
+    position: static;
+    margin: 18px 0 0 0;
   }
 }
