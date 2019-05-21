@@ -1,7 +1,6 @@
 .container {
-  box-sizing: border-box;
-  width: auto;
-  padding: 0 30px;
+  width: 260px;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +15,5 @@
   .container {
     width: 1050px;
     margin: 0 auto;
-    // padding: 0 50px;
   }
 }

@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 15px 20px;
+  padding: 14px 20px;
 
   font-size: 18px;
   line-height: 20px;
@@ -20,4 +20,17 @@
 
   background-color: $downy-color;
   border: none;
+}
+
+.button:hover {
+  color: #ffffff;
+
+  background-color: $charcoal-color;
+  opacity: 1;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  opacity: 1;
 }
