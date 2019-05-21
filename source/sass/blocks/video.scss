@@ -56,13 +56,12 @@
 
   .video__image-wrapper {
     order: -1;
-    // для сетки
+    margin-bottom: 37px;
+  }
+
+  .video__image {
     width: 668px;
     height: 455px;
-    //
-    margin-bottom: 37px;
-
-    background-color: bisque;
   }
 
   .video__headline {
@@ -97,11 +96,11 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
 
-    //
+  .video__image {
     width: 682px;
     height: 455px;
-    //
   }
 
   .video__headline {

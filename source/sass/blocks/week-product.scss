@@ -141,8 +141,11 @@
 
   .week-product__image {
     position: absolute;
+    z-index: -1;
     top: 107px;
     right: 2px;
+    width: 333px;
+    height: 404px;
     margin: 0;
   }
 }
@@ -150,6 +153,7 @@
 
 @media (min-width: $desktop-width) {
   .week-product {
+    box-sizing: border-box;
     margin-bottom: 160px;
     padding-left: 175px;
   }
@@ -186,5 +190,7 @@
   .week-product__image {
     top: -54px;
     right: 0;
+    width: 525px;
+    height: 636px;
   }
 }
