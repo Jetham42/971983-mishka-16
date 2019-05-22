@@ -100,6 +100,11 @@
     box-shadow: none;
   }
 
+  .main-nav__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .main-nav__mobile-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -198,13 +203,14 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    // для сетки
+    top: 9px;
+    left: 449px;
+    z-index: 10;
+  }
+
+  .main-nav__logo-image {
     width: 149px;
     height: 72px;
-    //
-    top: 9px;
-    left: 465px;
-    z-index: 10;
   }
 
   .main-nav__link-list {

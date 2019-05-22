@@ -74,7 +74,7 @@
   font-size: 15px;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: 1149px) {
   .catalog {
     width: 669px;
     margin-bottom: 53px;
@@ -86,14 +86,14 @@
   }
 
   .catalog__shortcut {
-    // для сетки
     width: 334px;
     height: 334px;
-    //
     margin: 0;
   }
 
   .catalog__img {
+    width: 334px;
+    height: 334px;
     margin: 0;
   }
 

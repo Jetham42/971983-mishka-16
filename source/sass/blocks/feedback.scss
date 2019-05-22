@@ -48,6 +48,25 @@
     flex-direction: column;
     position: relative;
     margin-bottom: 148px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -50px;
+      z-index: -1;
+      width: 350px;
+      height: 456px;
+
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-size: 350px auto;
+      }
+    }
   }
 
   .feedback__headline {
@@ -96,11 +115,24 @@
 @media (min-width: $desktop-width) {
   .feedback {
     margin-bottom: 233px;
-    padding-left: 174px;
+    padding: 0 50px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-position: 50px 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+    &::before {
+      content: none;
+    }
   }
 
   .feedback__headline {
-    margin: 72px 0 48px 0;
+    margin: 72px 0 48px 174px;
     width: 230px;
 
     font-size: 53px;
@@ -109,11 +141,11 @@
 
   .feedback__text {
     width: 740px;
-    margin: 0 0 39px 0;
+    margin: 0 0 39px  174px;
   }
 
   .feedback__author-wrapper {
-    margin: 0 0 95px 0;
+    margin: 0 0 95px  174px;
   }
 
   .feedback__name {
@@ -122,11 +154,11 @@
 
   .feedback__button-wrapper {
     bottom: 110px;
-    right: 17px;
+    right: 50px;
   }
 
   .feedback__write {
     top: 79px;
-    right: 0;
+    right: 50px;
   }
 }

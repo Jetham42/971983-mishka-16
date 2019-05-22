@@ -87,6 +87,10 @@
     margin-right: 22px;
   }
 
+  .contacts__addres-value {
+    width: 220px;
+  }
+
   .contacts__map {
     margin-bottom: 55px;
   }
@@ -99,6 +103,11 @@
     font-size: 17px;
     text-align: left;
   }
+
+  .contacts__image {
+    width: 768px;
+    height: 457px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -110,6 +119,7 @@
   }
 
   .contacts__wrapper {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding-left: 175px;
@@ -148,5 +158,10 @@
 
   .contacts__feedback {
     margin: 0 0 0 175px;
+  }
+
+  .contacts__image {
+    width: 525px;
+    height: 457px;
   }
 }
