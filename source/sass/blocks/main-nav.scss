@@ -58,12 +58,32 @@
   position: relative;
 }
 
+.main-nav__link--search:focus,
+.main-nav__link--search:hover,
+.main-nav__link--cart:focus,
+.main-nav__link--cart:hover {
+  opacity: 1;
+}
+
 .main-nav__link--search svg {
   position: absolute;
   top: 32px;
   transform: translateX(-28px);
 
   opacity: 0.2;
+}
+.main-nav__link--search:focus svg,
+.main-nav__link--search:hover svg,
+.main-nav__link--cart:focus svg,
+.main-nav__link--cart:hover svg {
+  fill: $downy-color;
+  opacity: 1;
+}
+
+.main-nav__link--search:active,
+.main-nav__link--cart:active {
+  fill: $downy-color;
+  opacity: 0.3;
 }
 
 .main-nav__link--cart {

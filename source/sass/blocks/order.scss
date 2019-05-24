@@ -68,10 +68,6 @@
   }
 }
 
-.order__radio {
-  display: none;
-}
-
 .order__label {
   position: relative;
   display: block;
@@ -114,10 +110,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.order__checkbox {
-  display: none;
 }
 
 .order__color-label {

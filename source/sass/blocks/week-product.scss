@@ -1,4 +1,4 @@
-.week-product {
+.week-product__wrapper {
   margin-bottom: 70px;
 
   font-size: 15px;
@@ -84,10 +84,29 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
+    position: relative;
+    margin-bottom: 119px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -68px;
+      height: 15px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: 13px 0;
+      background-size: 771px 15px;
+    }
+  }
+
+  .week-product__wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 119px;
   }
 
   .week-product__headline {
@@ -153,9 +172,31 @@
 
 @media (min-width: $desktop-width) {
   .week-product {
-    box-sizing: border-box;
     margin-bottom: 160px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .week-product__wrapper {
+    box-sizing: border-box;
     padding-left: 175px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -94px;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: 27px 0;
+      background-size: 1050px 23px;
+    }
   }
 
   .week-product__headline {

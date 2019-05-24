@@ -1,9 +1,46 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
   margin: 0 39px;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.copyright__text {
+  margin: 6px 34px 0 0;
+}
+
+.copyright__text:active {
+  opacity: 0.3;
+}
+
+.copyright__link {
+  display: flex;
+}
+
+.copyright__link svg {
+  fill: $downy-color;
+}
+
+.copyright__link:focus,
+.copyright__link:hover {
+  opacity: 1;
+}
+
+.copyright__link:focus svg,
+.copyright__link:hover svg {
+  fill: #46c1ae;
+}
+
+.copyright__link:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    margin-top: 14px;
+  }
 }

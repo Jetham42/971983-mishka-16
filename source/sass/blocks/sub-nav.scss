@@ -25,6 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .sub-nav {
+    position: relative;
     display: flex;
     width: 668px;
     margin: -120px auto 47px auto;
@@ -43,7 +44,7 @@
 @media (min-width: $desktop-width) {
   .sub-nav {
     width: 1050px;
-    margin-top: -151px;
+    margin-top: -128px;
     margin-bottom: 122px;
   }
 

@@ -1,6 +1,45 @@
 .social-links {
-  margin: 0 0 50px 0;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 57px 46px 57px;
   padding: 0;
 
   list-style: none;
+}
+
+.social-links__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-links__links:hover,
+.social-links__links:focus {
+  opacity: 1;
+}
+
+.social-links__links:hover svg,
+.social-links__links:focus svg {
+  fill: #46c1ae;
+}
+
+.social-links__links:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .social-links {
+    margin: 0;
+    margin-right: 84px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-links {
+    margin-right: 273px;
+  }
 }
