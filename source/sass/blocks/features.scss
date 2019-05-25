@@ -108,7 +108,7 @@
   }
 
   .features__headline {
-    margin-bottom: 102px;
+    margin-bottom: 42px;
 
     font-size: 43px;
     line-height: 50px;
@@ -128,54 +128,55 @@
   }
 
   .features__item {
-    padding: 0 0 111px 0;
+    padding-top: 60px;
+    margin-bottom: 51px;
 
     font-size: 20px;
     line-height: 22px;
 
     &:last-child {
-      padding: 0;
+      margin: 0;
     }
   }
 
   .features__item--flower {
     &::before {
-      top: -55px;
+      top: 6px;
       left: 9px;
     }
   }
 
   .features__item--greenback {
     &::before {
-      top: -53px;
+      top: 7px;
       left: 1px;
     }
   }
 
   .features__item--heart {
     &::before {
-      top: -48px;
+      top: 12px;
       left: 9px;
     }
   }
 
   .features__item--roll {
     &::before {
-      top: -50px;
+      top: 8px;
       left: 3px;
     }
   }
 
   .features__item--rocket {
     &::before {
-      top: -50px;
+      top: 10px;
       left: -6px;
     }
   }
 
   .features__item--present {
     &::before {
-      top: -52px;
+      top: 7px;
       left: 3px;
     }
   }
@@ -190,7 +191,7 @@
   }
 
   .features__headline {
-    margin: 0 0 97px 0;
+    margin: 0 0 37px 0;
 
     font-size: 53px;
     line-height: 57px;

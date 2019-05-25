@@ -1,5 +1,5 @@
 .order__description {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   font-size: 13px;
   line-height: 24px;
@@ -15,7 +15,7 @@
 }
 
 .order__field-wrapper {
-  margin-bottom: 32px;
+  margin-bottom: 19px;
 }
 
 .order__name {
@@ -79,6 +79,8 @@
 }
 
 .order__type-label {
+  cursor: pointer;
+
   &::before {
     content: "";
 
@@ -91,6 +93,12 @@
 
     border: 2px solid #000000;
     border-radius: 50%;
+  }
+}
+
+.order__radio:focus + .order__type-label {
+  &::before {
+    outline: rgb(59, 153, 252) auto 5px;
   }
 }
 
@@ -113,6 +121,8 @@
 }
 
 .order__color-label {
+  cursor: pointer;
+
   &::before {
     content: "";
 
@@ -124,6 +134,12 @@
     height: 39px;
 
     border: 2px solid #000000;
+  }
+}
+
+.order__checkbox:focus + .order__color-label {
+  &::before {
+    outline: rgb(59, 153, 252) auto 5px;
   }
 }
 
@@ -141,7 +157,7 @@
 }
 
 .order__name-item {
-  margin: 0 0 22px 0;
+  margin: 0 0 29px 0;
 }
 
 .order__name-label {
@@ -153,7 +169,7 @@
   width: 100%;
   padding: 13px 2px 14px 0;
 
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
 
   border: none;
@@ -166,16 +182,54 @@
   border-color: #62d1ba;
 }
 
+.order__field-phone-wrapper {
+  margin-bottom: 38px;
+}
+
 .order__phone-wrapper {
+  position: relative;
+
   margin-bottom: 33px;
+}
+
+.order__phone-icon {
+  position: absolute;
+  bottom: 17px;
+  right: 9px;
+
+  opacity: 0.2;
 }
 
 .order__phone-name {
   margin-bottom: 8px;
 }
 
+.order__phone-input {
+  font-size: 19px;
+}
+
+.order__mail-wrapper {
+  position: relative;
+}
+
+.order__mail-icon {
+  position: absolute;
+  bottom: 13px;
+  right: 4px;
+
+  opacity: 0.2;
+}
+
+.order__phone-input:hover + .order__phone-icon,
+.order__phone-input:focus + .order__phone-icon,
+.order__mail-input:hover + .order__mail-icon,
+.order__mail-input:focus + .order__mail-icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .order__extra-name {
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 }
 
 .order__description-field {
@@ -192,8 +246,14 @@
   resize: none;
 }
 
+.order__description-field:hover,
+.order__description-field:focus {
+  outline: none;
+  border-color: #62d1ba;
+}
+
 .order__description-wrapper {
-  margin-bottom: 11px;
+  margin-bottom: 0;
 }
 
 .order__hint {
@@ -205,6 +265,7 @@
 }
 
 .order__submit {
+  width: 100%;
   margin-bottom: 54px;
 }
 
@@ -329,6 +390,8 @@
 
   .order__input {
     padding: 10px 18px 13px 18px;
+
+    font-size: 19px;
   }
 
   .order__name-input {
@@ -360,6 +423,16 @@
     background-color: transparent;
   }
 
+  .order__phone-icon {
+    bottom: 17px;
+    right: 26px;
+  }
+
+  .order__mail-icon {
+    bottom: 16px;
+    right: 22px;
+  }
+
   .order__description-field {
     width: 501px;
   }
@@ -371,6 +444,7 @@
   }
 
   .order__submit {
+    width: auto;
     order: -1;
     margin: 0;
     margin-right: 138px;
@@ -438,6 +512,15 @@
   .order__phone-input,
   .order__mail-input {
     width: 700px;
+  }
+
+  .order__phone-icon {
+    right: 183px;
+  }
+
+  .order__mail-icon {
+    bottom: 15px;
+    right: 179px;
   }
 
   .order__description-field {

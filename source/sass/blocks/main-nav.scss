@@ -4,7 +4,7 @@
 
 .main-nav__logo {
   display: block;
-  margin: 0 -30px;
+  margin: 0;
   padding: 20px 0;
 
   text-align: center;
@@ -16,15 +16,19 @@
   display: none;
 }
 
+.main-nav__mobile-wrapper--open {
+  display: block;
+}
+
 .main-nav__link-list {
-  margin: 0 -30px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
 .main-nav__form-list {
-  margin: 0 -30px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -36,8 +40,29 @@
 
 .main-nav__button {
   position: absolute;
-  top: -80px;
-  right: 20px;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 29px 31px;
+  background-size: 20px 14px;
+  border: none;
+}
+
+.main-nav__button--close {
+  background-image: url("../img/icon-menu-close.svg");
+  background-position: 29px 27px;
+  background-size: 21px 20px;
+}
+
+.main-nav__button--no-js {
+  display: none;
 }
 
 .main-nav__item {
