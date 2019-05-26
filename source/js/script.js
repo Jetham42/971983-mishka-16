@@ -7,16 +7,10 @@ var modalOpenIndex = document.querySelector(".week-product__buy");
 var modalOpenCatalog = document.querySelectorAll(".catalog__link");
 var modalClose = document.querySelector(".modal__submit");
 
-var isIndex = true;
+var map = document.querySelector(".yandex-map");
 
 menu.classList.remove("no-js");
 menuButton.classList.remove("main-nav__button--no-js");
-
-try {
-  modalOpenIndex.addEventListener("click", function (evt) {});
-} catch (err) {
-  isIndex = false;
-};
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -24,13 +18,44 @@ menuButton.addEventListener("click", function (evt) {
   menuButton.classList.toggle("main-nav__button--close");
 })
 
-if (isIndex) {
+if (modalOpenIndex) {
   modalOpenIndex.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.add("modal--open");
     body.classList.add("blackout");
   });
+};
 
+if (modalOpenCatalog) {
+  modalOpenCatalog.forEach(function(i) {
+    i.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.add("modal--open");
+      body.classList.add("blackout");
+    });
+  });
+}
+
+
+if (modalClose) {
+  modalClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    body.classList.remove("blackout");
+    modal.classList.remove("modal--open");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modal.classList.contains("modal--open")) {
+        body.classList.remove("blackout");
+        modal.classList.remove("modal--open");
+      }
+    }
+  });
+}
+
+if (map) {
   ymaps.ready(function () {
     var myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
@@ -50,18 +75,4 @@ if (isIndex) {
     myMap.geoObjects
         .add(myPlacemark);
   });
-} else {
-  modalOpenCatalog.forEach(function(i) {
-    i.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modal.classList.add("modal--open");
-      body.classList.add("blackout");
-    });
-  });
-};
-
-modalClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  body.classList.remove("blackout");
-  modal.classList.remove("modal--open");
-});
+}

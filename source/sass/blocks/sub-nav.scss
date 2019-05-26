@@ -6,18 +6,14 @@
 }
 
 .sub-nav__link {
+  position: relative;
   display: block;
-  width: 112px;
   padding: 25px 180px 30px 29px;
 
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-}
-
-.sub-nav__item {
-  position: relative;
 
   &::before {
     content: "";
@@ -32,7 +28,12 @@
   }
 }
 
-.sub-nav__item--interior {
+.sub-nav__link-text {
+  display: block;
+  width: 112px;
+}
+
+.sub-nav__link--interior {
   background-color: $downy-color;
 
   &::before {
@@ -43,7 +44,7 @@
   }
 }
 
-.sub-nav__item--toy {
+.sub-nav__link--toy {
   background-color: #56c3b2;
 
   &::before {
@@ -62,48 +63,6 @@
     margin: -116px auto 38px auto;
   }
 
-  .sub-nav__item:hover,
-  .sub-nav__item:focus {
-    transform: translateY(-5px);
-
-    &::before {
-      opacity: 0.7;
-    }
-  }
-
-  .sub-nav__item:active {
-    transform: translateY(-5px);
-
-    &::before {
-      opacity: 0.3;
-    }
-  }
-
-  .sub-nav__item--interior {
-    &::before {
-      top: 28px;
-    }
-  }
-
-  .sub-nav__item--interior:hover,
-  .sub-nav__item--interior:focus,
-  .sub-nav__item--interior:active {
-    background-color: #59d5bc;
-  }
-
-  .sub-nav__item--toy {
-    &::before {
-      top: 31px;
-      right: 34px;
-    }
-  }
-
-  .sub-nav__item--toy:hover,
-  .sub-nav__item--toy:focus,
-  .sub-nav__item--toy:active {
-    background-color: #46c1ae;
-  }
-
   .sub-nav__link {
     box-sizing: border-box;
     width: 334px;
@@ -119,10 +78,52 @@
     &:hover {
       opacity: 1;
     }
+  }
 
-    &:active {
+  .sub-nav__link:hover,
+  .sub-nav__link:focus {
+    transform: translateY(-5px);
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  .sub-nav__link:active {
+    transform: translateY(-5px);
+
+    &::before {
       opacity: 0.3;
     }
+  }
+
+  .sub-nav__link:active .sub-nav__link-text {
+    opacity: 0.3;
+  }
+
+  .sub-nav__link--interior {
+    &::before {
+      top: 28px;
+    }
+  }
+
+  .sub-nav__link--interior:hover,
+  .sub-nav__link--interior:focus,
+  .sub-nav__link--interior:active {
+    background-color: #59d5bc;
+  }
+
+  .sub-nav__link--toy {
+    &::before {
+      top: 31px;
+      right: 34px;
+    }
+  }
+
+  .sub-nav__link--toy:hover,
+  .sub-nav__link--toy:focus,
+  .sub-nav__link--toy:active {
+    background-color: #46c1ae;
   }
 }
 
