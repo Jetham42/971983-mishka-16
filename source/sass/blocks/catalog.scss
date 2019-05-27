@@ -20,9 +20,24 @@
   }
 }
 
+.catalog__item:focus .catalog__wrapper,
+.catalog__item:hover .catalog__wrapper {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.catalog__item:active .catalog__wrapper {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .catalog__shortcut {
   display: block;
   margin: 0;
+}
+
+.catalog__shortcut:hover,
+.catalog__shortcut:focus,
+.catalog__shortcut:active {
+  opacity: 1;
 }
 
 .catalog__img {
@@ -51,6 +66,8 @@
 .catalog__headline {
   width: 197px;
   margin: 0 0 5px 0;
+
+  font-weight: 700;
 }
 
 .catalog__headline-link {
@@ -72,6 +89,29 @@
   margin: 0;
 
   font-size: 15px;
+}
+
+.catalog__bottom-line-wrapper {
+  display: flex;
+}
+
+.catalog__link {
+  overflow: hidden;
+}
+
+.catalog__link svg {
+  opacity: 0.2;
+}
+
+.catalog__link:hover svg,
+.catalog__link:focus svg {
+  fill: $downy-color;
+  opacity: 1;
+}
+
+.catalog__link:active svg {
+  fill: $downy-color;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) and (max-width: 1149px) {
@@ -127,9 +167,13 @@
     font-size: 15px;
   }
 
+  .catalog__bottom-line-wrapper {
+    margin-top: auto;
+  }
+
   .catalog__price {
     width: auto;
-    margin-top: auto;
+    margin-right: auto;
 
     font-size: 17px;
   }
@@ -160,10 +204,8 @@
   }
 
   .catalog__img {
-    // для сетки
     width: 316px;
     height: 462px;
-    //
   }
 
   .catalog__wrapper {
@@ -193,9 +235,14 @@
     font-size: 15px;
   }
 
+  .catalog__bottom-line-wrapper {
+    margin-top: auto;
+  }
+
   .catalog__price {
     margin: 0;
     margin-top: auto;
+    margin-right: 40px;
 
     font-size: 17px;
   }

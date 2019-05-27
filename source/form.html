@@ -4,19 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <svg style="display: none;">
-    <symbol version="1.1" id="icon-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-      <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-    </symbol>
-    <symbol version="1.1" id="icon-cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-      <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-      </symbol>
-    </svg>
+    <div style="display:none">
+      <include src="build/img/sprite/sprite.svg"></include>
+    </div>
     <header class="page-header">
-      <nav class="main-nav container">
+      <nav class="main-nav header-container">
         <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -24,14 +19,14 @@
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишки">
           </picture>
         </a>
-        <button class="main-nav__button">Открыть меню</button>
-        <div class="main-nav__mobile-wrapper">
+        <button class="main-nav__button main-nav__button--no-js"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__mobile-wrapper no-js">
           <ul class="main-nav__link-list">
             <li class="main-nav__item main-nav__item--border">
               <a class="main-nav__link main-nav__link--left" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--right" href="#">Вязание на заказ</a>
+              <a class="main-nav__link main-nav__link--right">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__form-list">
@@ -55,10 +50,10 @@
         </div>
         <ul class="main-nav__desktop-list">
           <li class="main-nav__item main-nav__desktop-item">
-            <a class="main-nav__link" href="#">Новые поступления</a>
+            <a class="main-nav__link main-nav__desktop-link" href="#">Новые поступления</a>
           </li>
           <li class="main-nav__item main-nav__desktop-item">
-            <a class="main-nav__link" href="#">Распродажа</a>
+            <a class="main-nav__link main-nav__desktop-link" href="#">Распродажа</a>
           </li>
         </ul>
         <p class="main-nav__tip">Бесплатная доставка по России</p>
@@ -72,14 +67,14 @@
         <p class="order__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order__field">
           <div class="order__field-wrapper container">
-            <legend class="order__name order__type-name">Тип</legend>
+            <h2 class="order__name order__type-name">Тип</h2>
             <ul class="order__section order__type-section">
               <li class="order__item order__type-item">
-                <input class="order__radio" type="radio" name="type" id="type1" value="0" checked>
+                <input class="order__radio visually-hidden" type="radio" name="type" id="type1" value="0" checked>
                 <label for="type1" class="order__label order__type-label">Аксессуар для интерьера</label>
               </li>
               <li class="order__item order__type-item">
-                <input class="order__radio" type="radio" name="type" id="type2" value="1">
+                <input class="order__radio visually-hidden" type="radio" name="type" id="type2" value="1">
                 <label for="type2" class="order__label order__type-label">Детская игрушка</label>
               </li>
             </ul>
@@ -87,30 +82,30 @@
         </fieldset>
         <fieldset class="order__field order__field--grey">
           <div class="order__field-wrapper container">
-            <legend class="order__name order__color-name">Цвет</legend>
+            <h2 class="order__name order__color-name">Цвет</h2>
             <ul class="order__section order__color-section">
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color1" value="white" checked>
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color1" value="white" checked>
                 <label for="color1" class="order__label order__color-label">Белый</label>
               </li>
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color2" value="gray" checked>
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color2" value="gray" checked>
                 <label for="color2" class="order__label order__color-label">Серый</label>
               </li>
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color3" value="tyffany">
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color3" value="tyffany">
                 <label for="color3" class="order__label order__color-label">«Тиффани»</label>
               </li>
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color4" value="black">
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color4" value="black">
                 <label for="color4" class="order__label order__color-label">Черный</label>
               </li>
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color5" value="pink">
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color5" value="pink">
                 <label for="color5" class="order__label order__color-label">Розовый</label>
               </li>
               <li class="order__item order__color-item">
-                <input class="order__checkbox" type="checkbox" name="color" id="color6" value="orange">
+                <input class="order__checkbox visually-hidden" type="checkbox" name="color" id="color6" value="orange">
                 <label for="color6" class="order__label order__color-label">Оранжевый</label>
               </li>
             </ul>
@@ -118,7 +113,7 @@
         </fieldset>
         <fieldset class="order__field">
           <div class="order__field-wrapper container">
-            <legend class="order__name order__initials-name">ФИО</legend>
+            <h2 class="order__name order__initials-name">ФИО</h2>
             <div class="order__name-wrapper">
               <p class="order__item order__name-item">
                 <label for="name" class="order__label order__name-label">Имя:</label>
@@ -140,10 +135,16 @@
             <div class="order__phone-wrapper">
               <label for="phone" class="order__name order__phone-name">Тел</label>
               <input class="order__input order__phone-input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <svg class="order__phone-icon" width="25" height="24">
+                <use xlink:href="#icon-phone"/>
+              </svg>
             </div>
             <div class="order__mail-wrapper">
               <label for="mail" class="order__name order__email-name">E-mail</label>
               <input class="order__input order__mail-input" type="email" name="mail" id="mail" placeholder="Ваш Email*" required>
+              <svg class="order__mail-icon" width="32" height="26">
+                <use xlink:href="#icon-mail"/>
+              </svg>
             </div>
           </div>
         </div>
@@ -161,28 +162,49 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo">
-          <img src="../source/img/logo-footer.svg" width="102" height="34" alt="Логотип Мишки">
+        <a class="footer__logo" href="index.html">
+          <svg width="102" height="34">
+            <use xlink:href="#logo-footer"/>
+          </svg>
+          <span class="visually-hidden">Ссылка на главную страницу Мишки</span>
         </a>
         <ul class="social-links">
           <li class="social-links__item">
-            <a href="#" class="visually-hidden">Мы в Инстаграме</a>
+            <a class="social-links__links" href="#">
+              <svg width="22" height="21">
+                <use xlink:href="#icon-insta"/>
+              </svg>
+              <span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
           <li class="social-links__item">
-            <a href="#" class="visually-hidden">Мы в Фэйсбуке</a>
+            <a class="social-links__links" href="#">
+              <svg width="15" height="28">
+                <use xlink:href="#icon-fb"/>
+              </svg>
+              <span class="visually-hidden">Мы в Фэйсбуке</span>
+            </a>
           </li>
           <li class="social-links__item">
-            <a href="#" class="visually-hidden">Мы в Твиттере</a>
+            <a class="social-links__links" href="#">
+              <svg width="23" height="20">
+                <use xlink:href="#icon-twitter"/>
+              </svg>
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
           </li>
         </ul>
         <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="https://via.placeholder.com/150" width="27"  height="34" alt="HTMLAcademy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано</p>
+            <svg width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"/>
+            </svg>
+            <span class="visually-hidden">Html Academy</span>
           </a>
         </div>
       </div>
     </footer>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

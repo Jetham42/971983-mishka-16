@@ -6,6 +6,7 @@
 }
 
 .sub-nav__link {
+  position: relative;
   display: block;
   padding: 25px 180px 30px 29px;
 
@@ -13,37 +14,123 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 62px;
+
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
 }
 
-.sub-nav__item--interior {
+.sub-nav__link-text {
+  display: block;
+  width: 112px;
+}
+
+.sub-nav__link--interior {
   background-color: $downy-color;
+
+  &::before {
+    top: 21px;
+    right: 17px;
+
+    background-image: url("../img/icon-interior.svg");
+  }
 }
 
-.sub-nav__item--toy {
+.sub-nav__link--toy {
   background-color: #56c3b2;
+
+  &::before {
+    top: 21px;
+    right: 26px;
+
+    background-image: url("../img/icon-toy.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .sub-nav {
+    position: relative;
     display: flex;
     width: 668px;
-    margin: -120px auto 47px auto;
+    margin: -116px auto 38px auto;
   }
 
   .sub-nav__link {
     box-sizing: border-box;
     width: 334px;
-    padding: 29px 187px 31px 36px;
+    padding: 29px 187px 36px 36px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &:focus {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .sub-nav__link:hover,
+  .sub-nav__link:focus {
+    transform: translateY(-5px);
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  .sub-nav__link:active {
+    transform: translateY(-5px);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  .sub-nav__link:active .sub-nav__link-text {
+    opacity: 0.3;
+  }
+
+  .sub-nav__link--interior {
+    &::before {
+      top: 28px;
+    }
+  }
+
+  .sub-nav__link--interior:hover,
+  .sub-nav__link--interior:focus,
+  .sub-nav__link--interior:active {
+    background-color: #59d5bc;
+  }
+
+  .sub-nav__link--toy {
+    &::before {
+      top: 31px;
+      right: 34px;
+    }
+  }
+
+  .sub-nav__link--toy:hover,
+  .sub-nav__link--toy:focus,
+  .sub-nav__link--toy:active {
+    background-color: #46c1ae;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sub-nav {
     width: 1050px;
-    margin-top: -151px;
+    margin-top: -128px;
     margin-bottom: 122px;
   }
 
