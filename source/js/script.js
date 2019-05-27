@@ -67,7 +67,7 @@ if (map) {
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), false, {
         iconLayout: "default#image",
-        iconImageHref: "../img/icon-map-pin.svg",
+        iconImageHref: "img/icon-map-pin.svg",
         iconImageSize: [67, 100],
         iconImageOffset: [-33.5, -100]
     });
