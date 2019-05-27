@@ -22,11 +22,11 @@
 
 .catalog__item:focus .catalog__wrapper,
 .catalog__item:hover .catalog__wrapper {
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog__item:active .catalog__wrapper {
-  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog__shortcut {
@@ -95,7 +95,7 @@
   right: 26px;
 }
 
-.catalog__link svg{
+.catalog__link svg {
   opacity: 0.2;
 }
 

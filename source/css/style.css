@@ -1106,7 +1106,7 @@ img {
 
 .features__item--greenback::before {
   top: 31px;
-  left: 0px;
+  left: 0;
   background-image: url("../img/icon-feature-money.svg"); }
 
 .features__item--heart::before {
@@ -1693,8 +1693,8 @@ img {
   font-weight: 700;
   color: #444444;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
-          box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+          box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6; }
 
 .modal--open {
@@ -1795,12 +1795,12 @@ img {
 
 .catalog__item:focus .catalog__wrapper,
 .catalog__item:hover .catalog__wrapper {
-  -webkit-box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
 
 .catalog__item:active .catalog__wrapper {
-  -webkit-box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
 
 .catalog__shortcut {
   display: block;
@@ -2210,7 +2210,7 @@ img {
   outline: #3b99fc auto 5px; }
 
 .order__checkbox:checked + .order__color-label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-size: 22px;
   background-position: 7px 10px;
   background-repeat: no-repeat; }
@@ -2250,7 +2250,8 @@ img {
   position: absolute;
   bottom: 17px;
   right: 9px;
-  opacity: 0.2; }
+  opacity: 0.2;
+  pointer-events: none; }
 
 .order__phone-name {
   margin-bottom: 8px; }
@@ -2265,7 +2266,8 @@ img {
   position: absolute;
   bottom: 13px;
   right: 4px;
-  opacity: 0.2; }
+  opacity: 0.2;
+  pointer-events: none; }
 
 .order__phone-input:hover + .order__phone-icon,
 .order__phone-input:focus + .order__phone-icon,

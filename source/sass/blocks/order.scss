@@ -145,7 +145,7 @@
 
 .order__checkbox:checked + .order__color-label {
   &::before {
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-size: 22px;
     background-position: 7px 10px;
     background-repeat: no-repeat;
@@ -198,6 +198,8 @@
   right: 9px;
 
   opacity: 0.2;
+
+  pointer-events: none;
 }
 
 .order__phone-name {
@@ -218,6 +220,8 @@
   right: 4px;
 
   opacity: 0.2;
+
+  pointer-events: none;
 }
 
 .order__phone-input:hover + .order__phone-icon,
