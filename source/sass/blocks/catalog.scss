@@ -66,6 +66,8 @@
 .catalog__headline {
   width: 197px;
   margin: 0 0 5px 0;
+
+  font-weight: 700;
 }
 
 .catalog__headline-link {
@@ -89,10 +91,12 @@
   font-size: 15px;
 }
 
+.catalog__bottom-line-wrapper {
+  display: flex;
+}
+
 .catalog__link {
-  position: absolute;
-  bottom: 24px;
-  right: 26px;
+  overflow: hidden;
 }
 
 .catalog__link svg {
@@ -163,16 +167,15 @@
     font-size: 15px;
   }
 
-  .catalog__price {
-    width: auto;
+  .catalog__bottom-line-wrapper {
     margin-top: auto;
-
-    font-size: 17px;
   }
 
-  .catalog__link {
-    bottom: 26px;
-    right: 32px;
+  .catalog__price {
+    width: auto;
+    margin-right: auto;
+
+    font-size: 17px;
   }
 }
 
@@ -232,15 +235,15 @@
     font-size: 15px;
   }
 
+  .catalog__bottom-line-wrapper {
+    margin-top: auto;
+  }
+
   .catalog__price {
     margin: 0;
     margin-top: auto;
+    margin-right: 40px;
 
     font-size: 17px;
-  }
-
-  .catalog__link {
-    bottom: 24px;
-    right: 32px;
   }
 }

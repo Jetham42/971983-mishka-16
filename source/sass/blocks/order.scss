@@ -96,9 +96,21 @@
   }
 }
 
+.order__type-label:hover {
+  &::before {
+    border-color: #63d1ba;
+  }
+}
+
 .order__radio:focus + .order__type-label {
   &::before {
-    outline: rgb(59, 153, 252) auto 5px;
+    border-color: #63d1ba;
+  }
+}
+
+.order__radio:active + .order__type-label {
+  &::before {
+    border-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -137,9 +149,21 @@
   }
 }
 
+.order__color-label:hover {
+  &::before {
+    border-color: #63d1ba;
+  }
+}
+
 .order__checkbox:focus + .order__color-label {
   &::before {
-    outline: rgb(59, 153, 252) auto 5px;
+    border-color: #63d1ba;
+  }
+}
+
+.order__checkbox:active + .order__color-label {
+  &::before {
+    border-color: rgba(0, 0, 0, 0.3);
   }
 }
 

@@ -176,7 +176,6 @@
 @media (min-width: $desktop-width) {
   .feedback {
     margin-bottom: 233px;
-    padding: 0 50px;
 
     background-image: url("../img/review@1x.jpg");
     background-position: 50px 0;
@@ -195,8 +194,8 @@
       content: "";
 
       position: absolute;
-      left: 50px;
-      right: 50px;
+      left: 0;
+      right: 0;
       bottom: -90px;
       height: 23px;
 
@@ -230,11 +229,11 @@
 
   .feedback__button-wrapper {
     bottom: 111px;
-    right: 70px;
+    right: 20px;
   }
 
   .feedback__write {
     top: 79px;
-    right: 50px;
+    right: 0;
   }
 }

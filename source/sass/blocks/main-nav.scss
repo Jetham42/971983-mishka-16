@@ -204,6 +204,10 @@
 
   .main-nav__item--search {
     margin: 0;
+
+    box-shadow:
+      1px 0 0 0 #ececec,
+      -1px 0 0 0 #ececec;
   }
 
   .main-nav__link--search {
@@ -212,10 +216,6 @@
     height: 88px;
     margin: 0;
     padding: 0;
-
-    box-shadow:
-      1px 0 0 0 #ececec,
-      -1px 0 0 0 #ececec;
   }
 
   .main-nav__link--search svg {
