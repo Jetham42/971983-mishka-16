@@ -47,7 +47,7 @@
 
 .catalog__wrapper {
   position: relative;
-  padding: 23px 27px 26px 27px;
+  padding: 24px 27px 26px 27px;
   flex-grow: 1;
 
   &::after {
@@ -142,7 +142,7 @@
     flex-direction: column;
     flex-wrap: 0;
     width: 277px;
-    padding: 26px 28px 27px 28px;
+    padding: 26px 31px 27px 28px;
 
     &::after {
       width: 274px;
@@ -150,8 +150,8 @@
   }
 
   .catalog__headline {
-    width: auto;
-    margin: 0 0 3px 0;
+    width: 230px;
+    margin: 0 0 4px 0;
 
     font-size: 17px;
   }
@@ -173,6 +173,7 @@
 
   .catalog__price {
     width: auto;
+    margin-left: 3px;
     margin-right: auto;
 
     font-size: 17px;
@@ -219,8 +220,8 @@
   }
 
   .catalog__headline {
-    width: 228px;
-    margin: 0 0 6px 0;
+    width: 242px;
+    margin: 0 0 3px 0;
   }
 
   .catalog__headline-link {

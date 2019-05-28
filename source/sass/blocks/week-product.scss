@@ -1,3 +1,22 @@
+.week-product {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -42px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 10px 0;
+    background-size: 320px 6px;
+  }
+}
+
 .week-product__wrapper {
   margin-bottom: 70px;
 
@@ -31,7 +50,7 @@
 }
 
 .week-product__list {
-  margin: 0 0 35px 0;
+  margin: 0 0 27px 0;
 }
 
 .week-product__list-line {
@@ -77,20 +96,12 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
-    position: relative;
-    margin-bottom: 119px;
+    margin-bottom: 118px;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      left: 0;
-      right: 0;
       bottom: -68px;
       height: 15px;
 
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat-x;
       background-position: 13px 0;
       background-size: 771px 15px;
     }
@@ -132,17 +143,17 @@
 
   .week-product__list {
     width: 291px;
-    margin-bottom: 61px;
+    margin-bottom: 53px;
   }
 
   .week-product__price {
-    width: 144px;
+    width: 155px;
     margin-bottom: 34px;
     margin-left: 72px;
 
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
   }
 
   .week-product__buy {
@@ -165,7 +176,7 @@
 
 @media (min-width: $desktop-width) {
   .week-product {
-    margin-bottom: 160px;
+    margin-bottom: 156px;
 
     &::after {
       content: none;
@@ -174,7 +185,7 @@
 
   .week-product__wrapper {
     box-sizing: border-box;
-    padding-left: 175px;
+    padding-left: 172px;
 
     &::after {
       content: "";
@@ -193,7 +204,7 @@
   }
 
   .week-product__headline {
-    width: 515px;
+    width: 600px;
     margin: 0 0 48px 0;
 
     font-size: 53px;
@@ -206,19 +217,24 @@
   }
 
   .week-product__description {
-    margin: 0 0 54px 0;
+    margin: 0 0 53px 0;
   }
 
   .week-product__list {
-    margin: 0 0 118px 0;
+    margin: 0 0 110px 0;
+  }
+
+  .week-product__list-line {
+    width: 235px;
   }
 
   .week-product__price {
-    margin: 0 0 34px 72px;
+    margin: 0 0 34px 76px;
   }
 
   .week-product__buy {
     margin: 0;
+    margin-left: 4px;
   }
 
   .week-product__image {

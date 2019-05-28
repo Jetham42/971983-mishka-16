@@ -15,7 +15,7 @@
 }
 
 .order__field-wrapper {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .order__name {
@@ -176,12 +176,20 @@
   }
 }
 
+.order__field-name-wrapper {
+  margin-bottom: 29px;
+}
+
 .order__initials-name {
   margin-bottom: 32px;
 }
 
 .order__name-item {
-  margin: 0 0 29px 0;
+  margin: 0 0 26px 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .order__name-label {
@@ -295,6 +303,9 @@
 .order__submit {
   width: 100%;
   margin-bottom: 54px;
+
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -437,7 +448,7 @@
 
   .order__phone-wrapper {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 23px;
   }
 
   .order__mail-wrapper {
@@ -476,7 +487,7 @@
     order: -1;
     margin: 0;
     margin-right: 138px;
-    padding: 15px 25px;
+    padding: 18px 29px;
 
     text-align: left;
   }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -15,7 +17,7 @@
         <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 772px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишки">
           </picture>
         </a>
@@ -112,7 +114,7 @@
           </div>
         </fieldset>
         <fieldset class="order__field">
-          <div class="order__field-wrapper container">
+          <div class="order__field-wrapper order__field-name-wrapper container">
             <h2 class="order__name order__initials-name">ФИО</h2>
             <div class="order__name-wrapper">
               <p class="order__item order__name-item">
